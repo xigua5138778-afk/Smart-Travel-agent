@@ -1,0 +1,31 @@
+# ===== 安全：绝不能上传的环境变量文件（含真实密钥）=====
+.env
+.env.*
+!.env.example
+
+# ===== 会话产生的备份文件（可能含旧密钥）=====
+*.bak.*
+
+# ===== 依赖与构建产物（体积大 / 可再生成）=====
+node_modules/
+dist/
+dist-ssr/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.venv/
+venv/
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ===== 日志 =====
+*.log
+logs/
